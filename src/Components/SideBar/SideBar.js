@@ -29,13 +29,13 @@ const SideBar = () => {
       </Me>
       <Ol>
         <Li>
-          <LinkStyled to="/aboutMe">About me</LinkStyled>
+          <LinkStyled to="/Portfolio/aboutMe">About me</LinkStyled>
         </Li>
         <Li>
-          <LinkStyled to="/projects">Projects</LinkStyled>
+          <LinkStyled to="/Portfolio/projects">Projects</LinkStyled>
         </Li>
         <Li>
-          <LinkStyled to="/ContactMe">Contact me</LinkStyled>
+          <LinkStyled to="/Portfolio/ContactMe">Contact me</LinkStyled>
         </Li>
       </Ol>
       <Footer>
