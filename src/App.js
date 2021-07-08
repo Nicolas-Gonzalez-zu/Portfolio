@@ -1,5 +1,4 @@
-import { BrowserRouter, Route } from 'react-router-dom';
-
+import { HashRouter, Route } from 'react-router-dom';
 // Components import
 // import Landing from './Components/Landing';
 import SideBar from './Components/SideBar/SideBar';
@@ -12,7 +11,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         {/* <Landing /> */}
         <Route path="/">
           <Layout>
@@ -20,7 +19,7 @@ function App() {
             <ContentWrapper />
           </Layout>
         </Route>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
