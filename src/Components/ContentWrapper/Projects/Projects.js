@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <Layout>
       <Title>Projects</Title>
-      <div>
+      <div style={{ paddingLeft: '2em', paddingRight: '2em' }}>
         <Carousel breakPoints={breakPoints}>
           {ProjectsList.map((p) => (
             <Project

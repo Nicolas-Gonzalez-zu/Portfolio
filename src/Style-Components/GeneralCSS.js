@@ -25,8 +25,23 @@ button{
   border: inherit;
 }
 button:focus{
-  outline:none
+  outline:none;
 }
+
+.rec.rec-arrow { 
+  color: #30bced;
+  background: none;
+}
+
+.rec.rec-arrow:hover { 
+  background: #30bced;
+}
+
+.rec-dot_active{
+  background-color: #30bced;
+  box-shadow:   0 0 1px 3px rgb(27 88 110  );
+}
+
 `;
 
 export const Layout = styled.div`

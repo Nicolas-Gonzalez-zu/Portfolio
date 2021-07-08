@@ -103,7 +103,7 @@ const AboutMe = () => {
       </DetailInfoCnt>
       <InnerCnt>
         <TechnicalSkillsCnt>
-          <TechnicalSkillsTitle>Habilidades tecnicas</TechnicalSkillsTitle>
+          <TechnicalSkillsTitle>Hard Skills</TechnicalSkillsTitle>
           <TechnicalSkills class="skill-container">
             {skills.map((e) => (
               <div className="skill-container">
@@ -118,7 +118,7 @@ const AboutMe = () => {
           <WorkExperience>{}</WorkExperience>
         </WorkExperienceCnt> */}
         <SoftSkillsCnt>
-          <SoftSkillsTitle>Habilidades blandas</SoftSkillsTitle>
+          <SoftSkillsTitle>Soft skills</SoftSkillsTitle>
           <SoftSkills>
             {softSkills.map((e) => (
               <div className="skill-container">

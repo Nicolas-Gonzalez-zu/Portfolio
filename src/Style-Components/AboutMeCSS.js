@@ -49,6 +49,9 @@ export const TechnicalSkills = styled.div`
   &::-webkit-scrollbar-thumb {
     background: #30bced;
   }
+  &::-webkit-scrollbar-track {
+    background: #1d1d21;
+  }
 `;
 
 export const TechnicalSkillsTitle = styled.p`
