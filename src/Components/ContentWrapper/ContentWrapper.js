@@ -13,13 +13,13 @@ const ContentWrapper = () => {
   return (
     <>
       <Layout>
-        <Route path="/aboutMe">
+        <Route exact path="/Portfolio/aboutMe">
           <AboutMe />
         </Route>
-        <Route path="/projects">
+        <Route exact path="/Portfolio/projects">
           <Projects />
         </Route>
-        <Route path="/ContactMe">
+        <Route exact path="/Portfolio/ContactMe">
           <ContactMe />
         </Route>
       </Layout>
