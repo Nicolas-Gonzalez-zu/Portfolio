@@ -9,17 +9,18 @@ export const CntContactMe = styled.div`
 
 export const CntSocials = styled.div`
   padding: 2em;
-  height: 26em;
+  display: flex;
+  flex-wrap: wrap;
   flex: 1;
 `;
 
 export const CntForm = styled.div`
+  min-width: 210px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding-top: 2em;
   position: relative;
-  height: 26em;
 `;
 
 export const ButtonValidated = styled.button`
@@ -45,45 +46,36 @@ export const Button = styled(ButtonValidated)`
 export const UL = styled.ul`
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 `;
 
 export const LI = styled.li`
   list-style: none;
-
-  &::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 10vw;
-    transform: translate(-50%, calc(-50% + 150px));
-    pointer-events: none;
-    font-weight: 700px;
-    transition: 0.5s;
-    opacity: 0;
-  }
-  &:hover::before {
-    opacity: 0.1;
-    transform: translate(-50%, calc(-50% + 150px));
-  }
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 120px;
+  height: 120px;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
 `;
 
 export const A = styled.a`
   position: relative;
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   background: #30bced;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin: 20px;
   font-size: 4em;
 
   transform-style: preserve-3d;
-  perspective: 500px;
-  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  perspective: 31.25rem;
+  box-shadow: 0 1.5625rem 2.1875rem rgba(0, 0, 0, 0.1);
   transition: all 0.25s;
   i {
     transition: 0.25s;
@@ -95,7 +87,8 @@ export const GitHub = styled(A)`
   &:hover {
     background: #24292e;
     i {
-      transform: scale(1.3) translateZ(50px);
+      font-size: 1.3em;
+      transform: translateZ(3.125rem);
     }
   }
 `;
@@ -104,7 +97,8 @@ export const LinkedIn = styled(A)`
   &:hover {
     background: #0077b5;
     i {
-      transform: scale(1.3) translateZ(50px);
+      font-size: 1.3em;
+      transform: translateZ(3.125rem);
     }
   }
 `;
@@ -113,7 +107,8 @@ export const Gmail = styled(A)`
   &:hover {
     background: #dd4b39;
     i {
-      transform: scale(1.3) translateZ(50px);
+      font-size: 1.3em;
+      transform: translateZ(3.125rem);
     }
   }
 `;
@@ -127,7 +122,7 @@ export const InputCSS = withStyles({
       borderBottomColor: '#30BCED',
     },
     '&:hover:not(.Mui-disabled):before': {
-      borderBottom: '2px solid #30BCED',
+      borderBottom: '0.125em solid #30BCED',
     },
   },
   input: {
@@ -144,11 +139,12 @@ export const InputCSS = withStyles({
 export const Layout = styled.div`
   display: flex;
   flex-direction: column;
-
+  font-size: 16px;
   color: white;
+  min-width: 500px;
 
   background: rgba(48, 48, 54);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0rem 0.25em 0.25em rgba(0, 0, 0, 0.25), inset 0rem 0.25em 0.25em rgba(0, 0, 0, 0.25);
 
   margin-top: 5em;
   margin-bottom: 5em;
@@ -174,5 +170,5 @@ export const Label = styled.label`
   color: #30bced;
   font-size: 2em;
   font-weight: bold;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0rem 0.125em 0.25em rgba(0, 0, 0, 0.25);
 `;

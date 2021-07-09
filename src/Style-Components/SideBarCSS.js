@@ -19,6 +19,7 @@ export const Layout = styled.div`
 
   font-size: 1vw;
   z-index: 1;
+  min-width: 11.875rem;
 `;
 
 export const Me = styled.div`
@@ -29,10 +30,19 @@ export const Me = styled.div`
 
 export const Name = styled.p`
   color: #fffaff;
+  font-size: 1.5em;
+  align-self: center;
+  justify-self: center;
+  @media (min-width: 1047px) {
+    font-size: 1em;
+  } ;
 `;
 export const Title = styled(Link)`
   color: #fffaff !important;
-  font-size: 2em;
+  font-size: 3em;
+  @media (min-width: 1047px) {
+    font-size: 2em;
+  } ;
 `;
 export const Span = styled.span`
   color: #fc5130;
@@ -53,13 +63,22 @@ export const Ol = styled.ol`
   color: #fffaff;
 `;
 
-export const Li = styled.li``;
+export const Li = styled.li`
+  font-size: 1.5em;
+  @media (min-width: 1047px) {
+    font-size: 1em;
+  } ;
+`;
 
 export const LinkStyled = styled(Link)``;
 
 export const Footer = styled.div`
   color: #fffaff;
   align-content: flex-end;
+  font-size: 1.5em;
+  @media (min-width: 1047px) {
+    font-size: 1em;
+  } ;
 `;
 
 export const TextFooter = styled.p``;

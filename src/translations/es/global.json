@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "about": "Acerca de mi",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "aboutMe": {
+    "title": "Acerca de mi",
+    "info": "Formado como Full Stack Developer cuento con experiencia trabajando con tecnologías tales como NodeJS, React y Redux  tanto en proyectos individuales como grupales. Además de apasionarme la informática también me apasionan los videojuegos y películas de ciencia ficción. Actualmente en busca de una oportunidad laboral en donde pueda desarrollar mis habilidades y adquirir experiencia.",
+    "skills": {
+      "hard": "Tecnologías",
+      "soft": "Habilidades blandas",
+      "leadership": "Liderazgo",
+      "teamwork": "Colaborativo",
+      "organized": "Organizado",
+      "flexibility": "Flexible",
+      "negotiation": "Negociador y solucionador de conflictos"
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "button": "Pruebalo tu mismo",
+    "economy": "En esta aplicación puedes organizar tus finanzas o contratar a un contador para que lo haga por ti.",
+    "oldrecipes": "Un recetario en la palma de tu mano. En esta app puedes compartir recetas como también aprender de las recetas ya publicadas."
+  },
+  "contact": {
+    "title": "Contactame",
+    "sendgrid": {
+      "email": "Tu email",
+      "subject": "Asunto del email",
+      "content": "Contenido del email",
+      "button": "Enviar",
+      "errorEmail": "Es necesario tu correo electrónico...",
+      "errorEmailInvalid": "El correo es invalido...",
+      "errorSubject": "Es necesario un asunto para el correo...",
+      "errorText": "Es necesario un contenido para el correo..."
+    }
+  }
+}

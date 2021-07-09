@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useTranslation } from 'react-i18next';
 import img from '../../assets/img/me.png';
 
 import {
@@ -17,7 +17,7 @@ import {
 } from '../../Style-Components/SideBarCSS';
 
 const SideBar = () => {
-  console.log('Rendered SideBar component');
+  const [t] = useTranslation('global');
   return (
     <Layout>
       <Title to="/">
@@ -29,18 +29,18 @@ const SideBar = () => {
       </Me>
       <Ol>
         <Li>
-          <LinkStyled to="aboutMe">About me</LinkStyled>
+          <LinkStyled to="aboutMe">{t('nav.about')}</LinkStyled>
         </Li>
         <Li>
-          <LinkStyled to="projects">Projects</LinkStyled>
+          <LinkStyled to="projects">{t('nav.projects')}</LinkStyled>
         </Li>
         <Li>
-          <LinkStyled to="ContactMe">Contact me</LinkStyled>
+          <LinkStyled to="ContactMe">{t('nav.contact')}</LinkStyled>
         </Li>
       </Ol>
       <Footer>
         <hr />
-        <TextFooter>Last update: 14/06/2021</TextFooter>
+        <TextFooter>This portfolio is under construction</TextFooter>
       </Footer>
     </Layout>
   );

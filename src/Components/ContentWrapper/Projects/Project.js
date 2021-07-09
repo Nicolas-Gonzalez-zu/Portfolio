@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { useTranslation } from 'react-i18next';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -19,6 +20,7 @@ const useStyles = makeStyles({
 
 const Project = ({ name, github, deploy, description, img }) => {
   const classes = useStyles();
+  const [t] = useTranslation('global');
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -34,7 +36,7 @@ const Project = ({ name, github, deploy, description, img }) => {
       </CardActionArea>
       <CardActions>
         <Button href={deploy} size="small" color="primary">
-          Try yourself
+          {t('projects.button')}
         </Button>
         <Button href={github} size="small" color="primary">
           GitHub

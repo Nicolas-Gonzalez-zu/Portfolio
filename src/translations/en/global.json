@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact Me"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "info": "Trained as a Full Stack Developer, I have experience working with technologies such as NodeJS, React, Redux among other technologies in the sector. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team. Passionate about computing, science fiction films and videogames. Currently looking for a job opportunity where I can develop my skills and gain experience.",
+    "skills": {
+      "hard": "Hard skills",
+      "soft": "Soft skills",
+      "leadership": "Leadership",
+      "teamwork": "Teamwork",
+      "organized": "Organized",
+      "flexibility": "Flexibility",
+      "negotiation": "Negotiation and Conflict Resolution"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "economy": "An app where you can orginze your finances or hire accountants to do it for you",
+    "oldrecipes": "A recetary in the palm of your hand. In this app you can share recipies or find new recipes already published"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "sendgrid": {
+      "email": "Your email",
+      "subject": "Subject for the email",
+      "content": "Content of the email",
+      "button": "Submit"
+    }
+  }
+}

@@ -1,15 +1,17 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import Rating from '@material-ui/lab/Rating';
+import { useTranslation } from 'react-i18next';
+
 // CSS import
 import { Title } from '../../../Style-Components/GeneralCSS';
 import {
   Layout,
   InnerCnt,
   TechnicalSkills,
-  WorkExperienceCnt,
-  WorkExperienceTitle,
-  WorkExperience,
+  // WorkExperienceCnt,
+  // WorkExperienceTitle,
+  // WorkExperience,
   SoftSkillsCnt,
   SoftSkillsTitle,
   SoftSkills,
@@ -79,36 +81,35 @@ const skills = [
   },
 ];
 
-const softSkills = [
-  'Leadership',
-  'Teamwork',
-  'Organized',
-  'Flexibility',
-  'Negotiation and Conflict Resolution',
-];
-
 const AboutMe = () => {
-  console.log('rendered AboutMe component');
-
+  const [t] = useTranslation('global');
+  const softSkillsEn = [
+    `${t('aboutMe.skills.leadership')}`,
+    `${t('aboutMe.skills.teamwork')}`,
+    `${t('aboutMe.skills.organized')}`,
+    `${t('aboutMe.skills.flexibility')}`,
+    `${t('aboutMe.skills.negotiation')}`,
+  ];
   return (
     <Layout>
-      <Title>About Me</Title>
+      <Title>{t('aboutMe.title')}</Title>
       <DetailInfoCnt>
-        <DetailInfo>
-          Hi there, my name is Nicolas, I am from Uruguay and I am 20 years old. In 2021 I started
-          to study in &#34;Soy Henry&#34;. There I discovered what i want to do in the future... be
-          a fullstack developer. Currently my intention is to continue studying this that I like so
-          much and I am searching for a job that allows me that.
-        </DetailInfo>
+        <DetailInfo>{t('aboutMe.info')}</DetailInfo>
       </DetailInfoCnt>
       <InnerCnt>
         <TechnicalSkillsCnt>
-          <TechnicalSkillsTitle>Hard Skills</TechnicalSkillsTitle>
-          <TechnicalSkills class="skill-container">
-            {skills.map((e) => (
-              <div className="skill-container">
-                <p>{e.name}</p>
-                <Rating style={{ color: '#f57c00' }} name="read-only" value={e.level} readOnly />
+          <TechnicalSkillsTitle>{t('aboutMe.skills.hard')}</TechnicalSkillsTitle>
+          <TechnicalSkills className="skill-container">
+            {skills.map((e, index) => (
+              <div key={`${index}skillsDiv`} className="skill-container">
+                <p key={`${index}skillsP`}>{e.name}</p>
+                <Rating
+                  key={`${index}skillsRating`}
+                  style={{ color: '#f57c00' }}
+                  name="read-only"
+                  value={e.level}
+                  readOnly
+                />
               </div>
             ))}
           </TechnicalSkills>
@@ -118,11 +119,15 @@ const AboutMe = () => {
           <WorkExperience>{}</WorkExperience>
         </WorkExperienceCnt> */}
         <SoftSkillsCnt>
-          <SoftSkillsTitle>Soft skills</SoftSkillsTitle>
+          <SoftSkillsTitle>{t('aboutMe.skills.soft')}</SoftSkillsTitle>
           <SoftSkills>
-            {softSkills.map((e) => (
-              <div className="skill-container">
-                <p>{e}</p>
+            {softSkillsEn.map((e, index) => (
+              <div
+                key={`${index}softSkillsDiv`}
+                style={{ minWidth: '100px' }}
+                className="skill-container"
+              >
+                <p key={`${index}softSkillsP`}>{e}</p>
               </div>
             ))}
           </SoftSkills>

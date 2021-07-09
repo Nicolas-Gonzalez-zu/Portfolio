@@ -4,6 +4,8 @@ export const Layout = styled.div`
   display: flex;
   flex-direction: column;
 
+  min-width: 540px;
+
   color: #fffaff;
   background: rgba(48, 48, 54);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -65,8 +67,7 @@ export const WorkExperienceTitle = styled(TechnicalSkillsTitle)``;
 export const WorkExperience = styled.div`
   overflow: auto;
   display: block;
-  width: 18em;
-  height: 18em;
+  flex: 1;
 `;
 
 export const SoftSkillsCnt = styled(TechnicalSkillsCnt)``;
@@ -78,6 +79,5 @@ export const SoftSkills = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 18em;
-  height: 18em;
+  flex: 1;
 `;
