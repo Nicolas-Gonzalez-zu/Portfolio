@@ -8,8 +8,14 @@ export default createGlobalStyle`
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body{
+html{
   width: 100vw;
+  height: 100vh;
+}
+body{
+  
+  width: 100%;
+  height: 100%;
   font-family: 'Red Hat Display', sans-serif;
   overflow-x: hidden;
 }
@@ -49,6 +55,9 @@ export const Layout = styled.div`
 
   width: 100vw;
   height: 100vh;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.div`

@@ -1,4 +1,4 @@
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 // Components import
@@ -9,6 +9,7 @@ import ContentWrapper from './Components/ContentWrapper/ContentWrapper';
 import GlobalStyle, { Layout } from './Style-Components/GeneralCSS';
 import globales from './translations/es/global.json';
 import globalen from './translations/en/global.json';
+import Language from './Components/ContentWrapper/Language/Language';
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -29,12 +30,17 @@ function App() {
       <I18nextProvider i18n={i18next}>
         <GlobalStyle />
         <HashRouter>
-          <Route path="/">
-            <Layout>
-              <SideBar />
-              <ContentWrapper />
-            </Layout>
-          </Route>
+          <Switch>
+            <Route exact path="/">
+              <Language />
+            </Route>
+            <Route path="/">
+              <Layout>
+                <SideBar />
+                <ContentWrapper />
+              </Layout>
+            </Route>
+          </Switch>
         </HashRouter>
       </I18nextProvider>
     </>

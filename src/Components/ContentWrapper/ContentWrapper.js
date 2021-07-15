@@ -4,7 +4,6 @@ import { Route } from 'react-router-dom';
 import AboutMe from './AboutMe/AboutMe';
 import Projects from './Projects/Projects';
 import ContactMe from './ContactMe/ContactMe';
-import Language from './Language/Language';
 
 // CSS import
 import { Layout } from '../../Style-Components/ContentWrapperCSS';
@@ -14,9 +13,6 @@ const ContentWrapper = () => {
   return (
     <>
       <Layout>
-        <Route path="/">
-          <Language />
-        </Route>
         <Route path="/aboutMe">
           <AboutMe />
         </Route>

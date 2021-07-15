@@ -20,12 +20,22 @@ export const Layout = styled.div`
   font-size: 1vw;
   z-index: 1;
   min-width: 11.875rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: row;
+    flex: 1;
+    width: 100vw;
+    padding: 0 6em 0 6em;
+  }
 `;
 
 export const Me = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Name = styled.p`
@@ -61,6 +71,14 @@ export const Img = styled.img`
 export const Ol = styled.ol`
   list-style-type: none;
   color: #fffaff;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    width: 50em;
+    justify-content: space-around;
+  }
 `;
 
 export const Li = styled.li`
@@ -78,7 +96,10 @@ export const Footer = styled.div`
   font-size: 1.5em;
   @media (min-width: 1047px) {
     font-size: 1em;
-  } ;
+  }
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const TextFooter = styled.p``;

@@ -4,18 +4,15 @@ export const Layout = styled.div`
   display: flex;
   flex-direction: column;
 
-  min-width: 540px;
-
   color: #fffaff;
   background: rgba(48, 48, 54);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  margin-top: 5em;
-  margin-bottom: 5em;
-  width: 80%;
-  height: 100%;
   padding-left: 4em;
   padding-right: 4em;
+  @media only screen and (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const DetailInfoCnt = styled.div`
@@ -37,12 +34,12 @@ export const InnerCnt = styled.div`
 export const TechnicalSkillsCnt = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1;
 `;
 
 export const TechnicalSkills = styled.div`
   overflow: auto;
   display: block;
-  width: 18em;
   height: 18em;
   &::-webkit-scrollbar {
     width: 5px;
@@ -70,7 +67,9 @@ export const WorkExperience = styled.div`
   flex: 1;
 `;
 
-export const SoftSkillsCnt = styled(TechnicalSkillsCnt)``;
+export const SoftSkillsCnt = styled(TechnicalSkillsCnt)`
+  flex: 1;
+`;
 
 export const SoftSkillsTitle = styled(TechnicalSkillsTitle)``;
 

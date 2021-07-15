@@ -15,7 +15,6 @@ export const CntSocials = styled.div`
 `;
 
 export const CntForm = styled.div`
-  min-width: 210px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -141,15 +140,10 @@ export const Layout = styled.div`
   flex-direction: column;
   font-size: 16px;
   color: white;
-  min-width: 500px;
 
   background: rgba(48, 48, 54);
   box-shadow: 0rem 0.25em 0.25em rgba(0, 0, 0, 0.25), inset 0rem 0.25em 0.25em rgba(0, 0, 0, 0.25);
 
-  margin-top: 5em;
-  margin-bottom: 5em;
-  width: 80%;
-  height: 100%;
   padding-left: 4em;
   padding-right: 4em;
 `;
